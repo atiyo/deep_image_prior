@@ -39,10 +39,10 @@ Training was done over 25k iterations on an Amazon GPU instance. Takes roughly a
 Note the grid like speckles during training. These are caused by convolutional kernels overlapping with one another during upsampling.
 Ground truth | Input | Output | Training
 ------------ | ----- | ------ | --------
-![truth](/a/raw/b/readme_imgs/deconv_truth.jpg "Ground Truth")|![deconstructed](/a/raw/b/readme_imgs/deconv_decon.jpg "Pixels removed from truth")|![actuals](/a/raw/b/readme_imgs/deconv_final.jpg "Output")|![actuals](/a/raw/b/readme_imgs/deconv.gif "Training progress")
+![truth](readme_imgs/deconv_truth.jpg "Ground Truth")|![deconstructed](readme_imgs/deconv_decon.jpg "Pixels removed from truth")|![actuals](readme_imgs/deconv_final.jpg "Output")|![actuals](readme_imgs/deconv.gif "Training progress")
 
 ### Upsampling with pixel shuffling:
 No speckles, however there is a hotspot (in the out of focus region towards the bunny's behind) that becomes a black spot. The appearance of these hotspots seems commonplace through both architectures, butt he extra smoothness given by the convolution transpose layers repairs these more effectively.
 Ground truth | Input | Output | Training
 ------------ | ----- | ------ | --------
-![truth](/a/raw/b/readme_imgs/px_shf_truth.jpg "Ground Truth")|![deconstructed](/a/raw/b/readme_imgs/px_shf_decon.jpg "Pixels removed from truth")|![actuals](/a/raw/b/readme_imgs/px_shf_final.jpg "Output")|![actuals](/a/raw/b/readme_imgs/px_shf.gif "Training progress")
+![truth](readme_imgs/px_shf_truth.jpg "Ground Truth")|![deconstructed](readme_imgs/px_shf_decon.jpg "Pixels removed from truth")|![actuals](readme_imgs/px_shf_final.jpg "Output")|![actuals](readme_imgs/px_shf.gif "Training progress")
