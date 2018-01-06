@@ -4,7 +4,7 @@ import numpy as np
 
 input_folder = './ec2_output_deconv/'
 output_name = 'deconv'
-output_size = 256
+output_size = 200
 
 def make_gif(output_file=output_name+'.gif', folder=input_folder+'output/', output_size=output_size):
     imgs = []
