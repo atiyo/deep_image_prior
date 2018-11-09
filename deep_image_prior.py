@@ -197,9 +197,6 @@ class deconv_hourglass(nn.Module):
         self.u_deconv_2 = nn.ConvTranspose2d(32, 16, 4, stride=2, padding=1)
         self.u_bn_2 = nn.BatchNorm2d(16)
 
-        self.u_deconv_2 = nn.ConvTranspose2d(32, 16, 4, stride=2, padding=1)
-        self.u_bn_2 = nn.BatchNorm2d(16)
-
         self.u_deconv_1 = nn.ConvTranspose2d(16, 8, 4, stride=2, padding=1)
         self.u_bn_1 = nn.BatchNorm2d(8)
 
